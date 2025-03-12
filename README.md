@@ -15,63 +15,23 @@ The Role-Based User Module is designed to manage user authentication and authori
 
 ### Prerequisites
 Ensure you have the following installed:
-- PHP (if using Laravel)
-- Node.js and npm (if using frontend frameworks)
-- Composer (for dependency management)
-- Database (MySQL, PostgreSQL, etc.)
+- PHP 
+- Database (MySQL)
 
 ### Steps
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/role-based-user-module.git
+   git clone https://github.com/DeveloperUdayKant/Role-Base-User-Module.git
    cd role-based-user-module
-   ```
-2. Install dependencies:
-   ```sh
-   composer install
-   npm install
-   ```
-3. Set up the environment file:
-   ```sh
-   cp .env.example .env
-   ```
-4. Configure database in `.env` file:
-   ```env
-   DB_CONNECTION=mysql
-   DB_HOST=127.0.0.1
-   DB_PORT=3306
-   DB_DATABASE=your_database_name
-   DB_USERNAME=your_database_user
-   DB_PASSWORD=your_database_password
-   ```
-5. Run migrations and seed roles:
-   ```sh
-   php artisan migrate --seed
-   ```
-6. Generate the application key:
-   ```sh
-   php artisan key:generate
-   ```
-7. Start the application:
-   ```sh
-   php artisan serve
    ```
 
 ## Usage
 ### Assigning Roles to Users
 After seeding, roles like `admin`, `editor`, and `user` will be available. You can assign a role to a user using:
 ```php
-$user = User::find(1);
-$user->assignRole('admin');
+is_active = 1
 ```
 
-### Middleware Protection
-Protect routes based on roles using middleware:
-```php
-Route::middleware(['role:admin'])->group(function () {
-    Route::get('/admin-dashboard', 'AdminController@index');
-});
-```
 
 ## API Endpoints
 | Method | Endpoint       | Description             |
