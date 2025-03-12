@@ -1,5 +1,4 @@
 # Role Base User Module
-# Role-Based User Module
 
 ## Overview
 The Role-Based User Module is designed to manage user authentication and authorization based on predefined roles. This module enables secure access control by assigning specific permissions to different user roles.
