@@ -1,0 +1,138 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #118B50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #1F4529;
+    border-radius: 4px;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 20px;
+  }
+  
+  /* Profile Container */
+  .profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .profile-container h2 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .profile-container p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Settings Container */
+  .settings-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .settings-container h2 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Form Styling for Settings */
+  .settings-container form {
+    margin-bottom: 20px;
+  }
+  
+  .settings-container form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .settings-container form input[type="text"],
+  .settings-container form input[type="email"],
+  .settings-container form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .settings-container form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #118B50;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .settings-container form button:hover {
+    background-color: #1F4529;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 15px;
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+  
